@@ -1,0 +1,64 @@
+name: Build Windows Executable
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+    
+    steps:
+    - name: 检出代码
+      uses: actions/checkout@v4
+      
+    - name: 设置 Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+        
+    - name: 安装依赖
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        pip install pyinstaller
+        
+    - name: 打包 EXE
+      run: |
+        pyinstaller --clean web_novel_writer.spec
+        
+    - name: 创建压缩包
+      run: |
+        Compress-Archive -Path "dist\网文 AI 辅写系统\*" -DestinationPath "web_novel_writer_v${{ github.ref_name }}.zip"
+        
+    - name: 上传构建产物
+      uses: actions/upload-artifact@v4
+      with:
+        name: web-novel-writer-windows
+        path: web_novel_writer_v*.zip
+        
+    - name: 创建 Release
+      if: startsWith(github.ref, 'refs/tags/')
+      uses: softprops/action-gh-release@v1
+      with:
+        files: web_novel_writer_v*.zip
+        body: |
+          ## 🖋️ 网文 AI 辅写系统 ${{ github.ref_name }}
+          
+          ### 📦 下载
+          点击上方的 `web_novel_writer_v${{ github.ref_name }}.zip` 下载
+          
+          ### 🚀 使用说明
+          1. 下载并解压 ZIP 包
+          2. 双击 `网文 AI 辅写系统.exe` 运行
+          3. 编辑 `config.yaml` 填入阿里云 API Key
+          4. 开始创作！
+          
+          ### 📝 注意事项
+          - 首次启动可能较慢（Windows Defender 扫描）
+          - 需要网络连接使用 AI 功能
+          - API Key 获取：https://dashscope.console.aliyun.com/
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
