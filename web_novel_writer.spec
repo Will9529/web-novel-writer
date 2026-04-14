@@ -1,6 +1,8 @@
 # -*- mode: python ; coding: utf-8 -*-
 # 网文 AI 辅写系统 - PyInstaller 打包配置
 
+import os
+
 block_cipher = None
 
 # 数据文件列表
