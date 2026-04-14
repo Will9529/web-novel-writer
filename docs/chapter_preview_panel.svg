@@ -1,0 +1,70 @@
+<svg viewBox="0 0 1200 700" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="cardShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="1200" height="700" fill="#f5f6fa"/>
+  
+  <!-- 标题 -->
+  <text x="50" y="50" fill="#2c3e50" font-family="Arial" font-size="24" font-weight="bold">📖 章节预览面板</text>
+  
+  <!-- 章节卡片 1 -->
+  <g filter="url(#cardShadow)">
+    <rect x="50" y="80" width="1100" height="140" fill="white" rx="8"/>
+  </g>
+  <rect x="70" y="100" width="80" height="28" fill="#e3f2fd" rx="4"/>
+  <text x="85" y="120" fill="#1976d2" font-family="Arial" font-size="13" font-weight="bold">第 1 章</text>
+  <text x="165" y="120" fill="#2c3e50" font-family="Arial" font-size="16" font-weight="bold">末日开始</text>
+  <line x1="70" y1="145" x2="1130" y2="145" stroke="#e0e0e0" stroke-width="1"/>
+  <text x="70" y="170" fill="#5a6c7d" font-family="Arial" font-size="14">林默从噩梦中惊醒，发现世界已经变了模样。窗外的街道空无一人，只有废弃的车辆横七竖八...</text>
+  <text x="70" y="195" fill="#5a6c7d" font-family="Arial" font-size="14">手机没有信号，电视只有雪花屏。他走到阳台，看到远处升起滚滚浓烟...</text>
+  <text x="70" y="210" fill="#95a5a6" font-family="Arial" font-size="12">📝 3,250 字</text>
+  <rect x="1000" y="195" width="70" height="28" fill="white" stroke="#3498db" stroke-width="1" rx="4"/>
+  <text x="1015" y="214" fill="#3498db" font-family="Arial" font-size="12">👁 预览</text>
+  <rect x="1080" y="195" width="70" height="28" fill="#3498db" rx="4"/>
+  <text x="1095" y="214" fill="white" font-family="Arial" font-size="12">✏️ 编辑</text>
+  
+  <!-- 章节卡片 2 -->
+  <g filter="url(#cardShadow)">
+    <rect x="50" y="240" width="1100" height="140" fill="white" rx="8"/>
+  </g>
+  <rect x="70" y="260" width="80" height="28" fill="#e3f2fd" rx="4"/>
+  <text x="85" y="280" fill="#1976d2" font-family="Arial" font-size="13" font-weight="bold">第 2 章</text>
+  <text x="165" y="280" fill="#2c3e50" font-family="Arial" font-size="16" font-weight="bold">第一辆载具</text>
+  <line x1="70" y1="305" x2="1130" y2="305" stroke="#e0e0e0" stroke-width="1"/>
+  <text x="70" y="330" fill="#5a6c7d" font-family="Arial" font-size="14">在小区停车场，林默找到了一辆还能启动的越野车。油箱里还有半箱油，后备箱里有一些简单的工具...</text>
+  <text x="70" y="355" fill="#5a6c7d" font-family="Arial" font-size="14">他决定先收集一些物资，然后离开这个越来越危险的地方...</text>
+  <text x="70" y="370" fill="#95a5a6" font-family="Arial" font-size="12">📝 2,890 字</text>
+  <rect x="1000" y="355" width="70" height="28" fill="white" stroke="#3498db" stroke-width="1" rx="4"/>
+  <text x="1015" y="374" fill="#3498db" font-family="Arial" font-size="12">👁 预览</text>
+  <rect x="1080" y="355" width="70" height="28" fill="#3498db" rx="4"/>
+  <text x="1095" y="374" fill="white" font-family="Arial" font-size="12">✏️ 编辑</text>
+  
+  <!-- 章节卡片 3 -->
+  <g filter="url(#cardShadow)">
+    <rect x="50" y="400" width="1100" height="140" fill="white" rx="8"/>
+  </g>
+  <rect x="70" y="420" width="80" height="28" fill="#e3f2fd" rx="4"/>
+  <text x="85" y="440" fill="#1976d2" font-family="Arial" font-size="13" font-weight="bold">第 3 章</text>
+  <text x="165" y="440" fill="#2c3e50" font-family="Arial" font-size="16" font-weight="bold">幸存者营地</text>
+  <line x1="70" y1="465" x2="1130" y2="465" stroke="#e0e0e0" stroke-width="1"/>
+  <text x="70" y="490" fill="#5a6c7d" font-family="Arial" font-size="14">沿着公路行驶了两个小时，林默发现了一个临时搭建的幸存者营地。大约有二十多人聚集在这里...</text>
+  <text x="70" y="515" fill="#5a6c7d" font-family="Arial" font-size="14">他们警惕地看着每一个靠近的人。林默需要决定是否上前接触...</text>
+  <text x="70" y="530" fill="#95a5a6" font-family="Arial" font-size="12">📝 3,100 字</text>
+  <rect x="1000" y="515" width="70" height="28" fill="white" stroke="#3498db" stroke-width="1" rx="4"/>
+  <text x="1015" y="534" fill="#3498db" font-family="Arial" font-size="12">👁 预览</text>
+  <rect x="1080" y="515" width="70" height="28" fill="#3498db" rx="4"/>
+  <text x="1095" y="534" fill="white" font-family="Arial" font-size="12">✏️ 编辑</text>
+  
+  <!-- 底部按钮 -->
+  <rect x="50" y="570" width="180" height="45" fill="#2ecc71" rx="6"/>
+  <text x="75" y="600" fill="white" font-family="Arial" font-size="15" font-weight="bold">➕ 添加新章节</text>
+  <rect x="970" y="570" width="180" height="45" fill="#9b59b6" rx="6"/>
+  <text x="995" y="600" fill="white" font-family="Arial" font-size="15" font-weight="bold">✨ AI 生成章节</text>
+  
+  <!-- 设计说明 -->
+  <text x="50" y="660" fill="#7f8c8d" font-family="Arial" font-size="12">卡片圆角：8px | 阴影：0 2px 12px rgba(0,0,0,0.12) | 悬停效果：translateY(-2px)</text>
+</svg>

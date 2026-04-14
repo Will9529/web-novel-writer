@@ -1,0 +1,113 @@
+<svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- 渐变定义 -->
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2c3e50"/>
+      <stop offset="100%" style="stop-color:#34495e"/>
+    </linearGradient>
+    <linearGradient id="btnGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#3498db"/>
+      <stop offset="100%" style="stop-color:#2980b9"/>
+    </linearGradient>
+    <!-- 阴影滤镜 -->
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="1200" height="800" fill="#f5f6fa"/>
+  
+  <!-- 标题栏 -->
+  <rect x="50" y="30" width="1100" height="45" fill="url(#titleGrad)" rx="8" ry="8"/>
+  <text x="70" y="60" fill="white" font-family="Arial, sans-serif" font-size="18" font-weight="bold">📖 网文 AI 辅写系统</text>
+  <circle cx="1105" cy="52" r="6" fill="#ff5f56"/>
+  <circle cx="1085" cy="52" r="6" fill="#ffbd2e"/>
+  <circle cx="1065" cy="52" r="6" fill="#27ca40"/>
+  
+  <!-- 菜单栏 -->
+  <rect x="50" y="85" width="1100" height="35" fill="white" rx="4"/>
+  <text x="70" y="108" fill="#2c3e50" font-family="Arial" font-size="14">文件 (F)</text>
+  <text x="150" y="108" fill="#2c3e50" font-family="Arial" font-size="14">编辑 (E)</text>
+  <text x="230" y="108" fill="#2c3e50" font-family="Arial" font-size="14">视图 (V)</text>
+  <text x="310" y="108" fill="#2c3e50" font-family="Arial" font-size="14">工具 (T)</text>
+  <text x="390" y="108" fill="#2c3e50" font-family="Arial" font-size="14">帮助 (H)</text>
+  
+  <!-- 工具栏 -->
+  <rect x="50" y="130" width="1100" height="40" fill="white" rx="4"/>
+  <rect x="70" y="138" width="70" height="24" fill="#ecf0f1" rx="4"/>
+  <text x="85" y="155" fill="#2c3e50" font-family="Arial" font-size="12">📄 新建</text>
+  <rect x="150" y="138" width="70" height="24" fill="#ecf0f1" rx="4"/>
+  <text x="165" y="155" fill="#2c3e50" font-family="Arial" font-size="12">📂 打开</text>
+  <rect x="230" y="138" width="70" height="24" fill="#ecf0f1" rx="4"/>
+  <text x="245" y="155" fill="#2c3e50" font-family="Arial" font-size="12">💾 保存</text>
+  <line x1="320" y1="140" x2="320" y2="168" stroke="#e0e0e0" stroke-width="2"/>
+  <rect x="340" y="138" width="70" height="24" fill="#3498db" rx="4"/>
+  <text x="355" y="155" fill="white" font-family="Arial" font-size="12">▶ 生成</text>
+  
+  <!-- 侧边导航 -->
+  <rect x="50" y="180" width="180" height="380" fill="white" rx="4"/>
+  <rect x="55" y="190" width="170" height="40" fill="#e3f2fd" rx="4"/>
+  <text x="70" y="215" fill="#1976d2" font-family="Arial" font-size="14">📖 写作</text>
+  <rect x="55" y="235" width="170" height="40" fill="transparent" rx="4"/>
+  <text x="70" y="260" fill="#5a6c7d" font-family="Arial" font-size="14">📝 章纲</text>
+  <rect x="55" y="280" width="170" height="40" fill="transparent" rx="4"/>
+  <text x="70" y="305" fill="#5a6c7d" font-family="Arial" font-size="14">📜 风格宪法</text>
+  <rect x="55" y="325" width="170" height="40" fill="transparent" rx="4"/>
+  <text x="70" y="350" fill="#5a6c7d" font-family="Arial" font-size="14">🌍 世界观</text>
+  <rect x="55" y="370" width="170" height="40" fill="transparent" rx="4"/>
+  <text x="70" y="395" fill="#5a6c7d" font-family="Arial" font-size="14">📊 统计</text>
+  <line x1="70" y1="425" x2="210" y2="425" stroke="#e0e0e0" stroke-width="1"/>
+  <rect x="55" y="440" width="170" height="40" fill="transparent" rx="4"/>
+  <text x="70" y="465" fill="#5a6c7d" font-family="Arial" font-size="14">⚙ 设置</text>
+  
+  <!-- 主工作区 -->
+  <rect x="245" y="180" width="905" height="500" fill="white" rx="4" filter="url(#shadow)"/>
+  
+  <!-- Tab 标签 -->
+  <rect x="260" y="190" width="180" height="35" fill="#3498db" rx="4"/>
+  <text x="275" y="213" fill="white" font-family="Arial" font-size="13">第 3 章 幸存者营地</text>
+  <rect x="445" y="190" width="150" height="35" fill="#ecf0f1" rx="4"/>
+  <text x="460" y="213" fill="#7f8c8d" font-family="Arial" font-size="13">第 2 章 第一辆载具</text>
+  <rect x="600" y="190" width="150" height="35" fill="#ecf0f1" rx="4"/>
+  <text x="615" y="213" fill="#7f8c8d" font-family="Arial" font-size="13">第 1 章 末日开始</text>
+  
+  <!-- 编辑器区域 -->
+  <rect x="260" y="240" width="875" height="280" fill="#fafafa" stroke="#e0e0e0" stroke-width="1" rx="4"/>
+  <text x="280" y="270" fill="#2c3e50" font-family="Arial" font-size="14">林默从噩梦中惊醒，发现世界已经变了模样。窗外的街道</text>
+  <text x="280" y="295" fill="#2c3e50" font-family="Arial" font-size="14">空无一人，只有废弃的车辆横七竖八地停在路边。手机没有</text>
+  <text x="280" y="320" fill="#2c3e50" font-family="Arial" font-size="14">信号，电视只有雪花屏。</text>
+  <text x="280" y="360" fill="#2c3e50" font-family="Arial" font-size="14">他走到阳台，看到远处升起滚滚浓烟。空气中弥漫着一种说</text>
+  <text x="280" y="385" fill="#2c3e50" font-family="Arial" font-size="14">不清的焦糊味，让人心神不宁。</text>
+  <text x="280" y="425" fill="#2c3e50" font-family="Arial" font-size="14">沿着公路行驶了两个小时，林默发现了一个临时搭建的幸存</text>
+  <text x="280" y="450" fill="#2c3e50" font-family="Arial" font-size="14">者营地。大约有二十多人聚集在这里...</text>
+  <rect x="280" y="480" width="12" height="20" fill="#3498db"/>
+  
+  <!-- AI 建议面板 -->
+  <rect x="260" y="540" width="875" height="120" fill="#f8f9fa" rx="4"/>
+  <text x="280" y="565" fill="#3498db" font-family="Arial" font-size="14" font-weight="bold">💡 AI 写作建议</text>
+  <text x="280" y="590" fill="#5a6c7d" font-family="Arial" font-size="13">• 这段可以加入更多感官细节（气味、声音）</text>
+  <text x="280" y="615" fill="#5a6c7d" font-family="Arial" font-size="13">• 建议补充主角的心理活动</text>
+  <rect x="280" y="635" width="60" height="24" fill="white" stroke="#3498db" stroke-width="1" rx="4"/>
+  <text x="290" y="652" fill="#3498db" font-family="Arial" font-size="12">✨ 扩写</text>
+  <rect x="350" y="635" width="60" height="24" fill="white" stroke="#3498db" stroke-width="1" rx="4"/>
+  <text x="360" y="652" fill="#3498db" font-family="Arial" font-size="12">🔄 改写</text>
+  <rect x="420" y="635" width="60" height="24" fill="white" stroke="#3498db" stroke-width="1" rx="4"/>
+  <text x="430" y="652" fill="#3498db" font-family="Arial" font-size="12">✂️ 精简</text>
+  <rect x="490" y="635" width="60" height="24" fill="white" stroke="#3498db" stroke-width="1" rx="4"/>
+  <text x="500" y="652" fill="#3498db" font-family="Arial" font-size="12">📝 续写</text>
+  
+  <!-- 保存按钮 -->
+  <rect x="1050" y="200" width="80" height="30" fill="url(#btnGrad)" rx="4"/>
+  <text x="1065" y="220" fill="white" font-family="Arial" font-size="13">🔖 保存</text>
+  
+  <!-- 状态栏 -->
+  <rect x="50" y="690" width="1100" height="40" fill="#2c3e50" rx="4"/>
+  <text x="70" y="717" fill="white" font-family="Arial" font-size="13">📊 字数：12,345</text>
+  <text x="220" y="717" fill="white" font-family="Arial" font-size="13">📖 章节：第 3 章</text>
+  <text x="850" y="717" fill="white" font-family="Arial" font-size="13">✅ API 状态：正常</text>
+  <text x="1020" y="717" fill="white" font-family="Arial" font-size="13">🤖 LLM: qwen-plus</text>
+  
+  <!-- 图例说明 -->
+  <text x="50" y="760" fill="#7f8c8d" font-family="Arial" font-size="12">主色调：#3498db (蓝色) | 辅助色：#2ecc71 (绿), #9b59b6 (紫) | 字体：Microsoft YaHei</text>
+</svg>
